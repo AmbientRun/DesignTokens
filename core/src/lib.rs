@@ -10,6 +10,11 @@ use slug::slugify;
 mod expression;
 pub mod extensions;
 
+pub fn get_design_tokens() -> DesignTokens {
+    let data = include_str!("../../ambient-design/tokens.json");
+    serde_json::from_str(data).unwrap()
+}
+
 #[derive(Debug, Deserialize)]
 pub struct DesignTokens {
     pub global: TokenOrGroup,
