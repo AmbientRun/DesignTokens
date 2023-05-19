@@ -1,0 +1,3 @@
+[submodule "ambient-design"]
+	path = ambient-design
+	url = https://github.com/ilikeyourdog/ambient-design.git
