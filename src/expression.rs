@@ -37,8 +37,8 @@ impl Expression {
             Expression::Ref(path) => {
                 format!("var(--{})", path.iter().map(|x| slugify(x)).join("--"))
             }
-            Expression::Mul(a, b) => todo!(),
-            Expression::Div(a, b) => todo!(),
+            Expression::Mul(a, b) => format!("calc({} * {})", a.to_css(tokens), b.to_css(tokens)),
+            Expression::Div(a, b) => format!("calc({} / {})", a.to_css(tokens), b.to_css(tokens)),
             Expression::Value(val) => val.to_css(),
         }
     }

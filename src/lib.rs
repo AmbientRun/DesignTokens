@@ -1,5 +1,6 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, fmt::format};
 
+use convert_case::{Case, Casing};
 use expression::{Expression, Value};
 use extensions::{Extensions, StudioTokensExtension};
 use indexmap::IndexMap;
@@ -15,20 +16,28 @@ pub struct DesignTokens {
 }
 impl DesignTokens {
     pub fn to_css(&self) -> String {
-        let inner = self.global.to_css(self, "");
-        format!(":root {{\n{inner}\n}}")
+        self.global.to_css(self, "")
     }
     fn get_value(&self, path: &[String]) -> &TokenValue {
         self.global.get_value(self, path)
     }
 }
+
+#[derive(Debug, Deserialize)]
+pub enum TokenType {
+    #[serde(rename = "border")]
+    Border,
+    #[serde(other)]
+    Other,
+}
+
 #[derive(Debug, Deserialize)]
 #[serde(untagged)]
 pub enum TokenOrGroup {
     Token {
         value: TokenValue,
         #[serde(rename = "type")]
-        type_: String,
+        type_: TokenType,
         #[serde(rename = "$extensions")]
         extensions: Option<Extensions>,
     },
@@ -41,13 +50,24 @@ impl TokenOrGroup {
                 value,
                 type_,
                 extensions,
-            } => {
-                let value = match extensions {
-                    Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
-                    None => value.to_css(tokens),
-                };
-                format!("{path}: {};", value)
-            }
+            } => match value {
+                TokenValue::Single(value) => {
+                    let value = match extensions {
+                        Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
+                        None => value.to_css(tokens),
+                    };
+                    format!(":root {{ {path}: {}; }}", value)
+                }
+                TokenValue::Dict(dict) => {
+                    let value = dict
+                        .iter()
+                        .map(|(key, value)| {
+                            format!("{}: {};", css_property(type_, key), value.to_css(tokens))
+                        })
+                        .join("\n");
+                    format!(".{path} {{\n{}\n}}", value)
+                }
+            },
             TokenOrGroup::Group(group) => group
                 .iter()
                 .map(|(key, value)| value.to_css(tokens, &format!("{path}--{}", slugify(key))))
@@ -70,23 +90,34 @@ impl TokenOrGroup {
         }
     }
 }
+fn css_property(type_: &TokenType, key: &str) -> String {
+    match type_ {
+        TokenType::Border => match key {
+            "color" => "border-color".to_string(),
+            "width" => "border-width".to_string(),
+            "style" => "border-style".to_string(),
+            _ => key.to_case(Case::Kebab),
+        },
+        TokenType::Other => key.to_case(Case::Kebab),
+    }
+}
 
 #[derive(Debug, Deserialize)]
 #[serde(untagged)]
 pub enum TokenValue {
-    String(Expression),
+    Single(Expression),
     Dict(HashMap<String, Expression>),
 }
 impl TokenValue {
     fn to_css(&self, tokens: &DesignTokens) -> String {
         match self {
-            TokenValue::String(value) => value.to_css(tokens),
-            TokenValue::Dict(_) => todo!(),
+            TokenValue::Single(value) => value.to_css(tokens),
+            TokenValue::Dict(dict) => todo!(),
         }
     }
     fn get_value(&self, tokens: &DesignTokens) -> Value {
         match self {
-            TokenValue::String(expr) => expr.get_value(tokens),
+            TokenValue::Single(expr) => expr.get_value(tokens),
             _ => panic!("Can't resolve"),
         }
     }

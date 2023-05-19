@@ -13,3 +13,4 @@ itertools = "0.10.5"
 slug = "0.1.4"
 csscolorparser = { version = "0.6.2", features = ["lab"] }
 indexmap = { version = "1.9.3", features = ["serde"] }
+convert_case = "0.6.0"
