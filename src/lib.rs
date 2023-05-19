@@ -27,6 +27,8 @@ impl DesignTokens {
 pub enum TokenType {
     #[serde(rename = "border")]
     Border,
+    #[serde(rename = "typography")]
+    Typography,
     #[serde(other)]
     Other,
 }
@@ -61,9 +63,7 @@ impl TokenOrGroup {
                 TokenValue::Dict(dict) => {
                     let value = dict
                         .iter()
-                        .map(|(key, value)| {
-                            format!("{}: {};", css_property(type_, key), value.to_css(tokens))
-                        })
+                        .map(|(key, value)| css_entry(tokens, type_, key, value))
                         .join("\n");
                     format!(".{path} {{\n{}\n}}", value)
                 }
@@ -90,6 +90,9 @@ impl TokenOrGroup {
         }
     }
 }
+fn css_entry(tokens: &DesignTokens, type_: &TokenType, key: &str, value: &Expression) -> String {
+    format!("{}: {};", css_property(type_, key), value.to_css(tokens))
+}
 fn css_property(type_: &TokenType, key: &str) -> String {
     match type_ {
         TokenType::Border => match key {
@@ -98,7 +101,11 @@ fn css_property(type_: &TokenType, key: &str) -> String {
             "style" => "border-style".to_string(),
             _ => key.to_case(Case::Kebab),
         },
-        TokenType::Other => key.to_case(Case::Kebab),
+        TokenType::Typography => match key {
+            "textCase" => "text-transform".to_string(),
+            _ => key.to_case(Case::Kebab),
+        },
+        _ => key.to_case(Case::Kebab),
     }
 }
 
