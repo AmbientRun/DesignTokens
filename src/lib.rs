@@ -2,6 +2,7 @@ use std::collections::HashMap;
 
 use expression::{Expression, Value};
 use extensions::{Extensions, StudioTokensExtension};
+use indexmap::IndexMap;
 use itertools::Itertools;
 use serde::Deserialize;
 use slug::slugify;
@@ -31,7 +32,7 @@ pub enum TokenOrGroup {
         #[serde(rename = "$extensions")]
         extensions: Option<Extensions>,
     },
-    Group(HashMap<String, TokenOrGroup>),
+    Group(IndexMap<String, TokenOrGroup>),
 }
 impl TokenOrGroup {
     fn to_css(&self, tokens: &DesignTokens, path: &str) -> String {
