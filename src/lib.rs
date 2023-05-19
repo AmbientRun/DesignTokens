@@ -1,8 +1,8 @@
-use std::{collections::HashMap, fmt::format};
+use std::collections::HashMap;
 
 use convert_case::{Case, Casing};
 use expression::{Expression, Value};
-use extensions::{Extensions, StudioTokensExtension};
+use extensions::Extensions;
 use indexmap::IndexMap;
 use itertools::Itertools;
 use serde::Deserialize;
@@ -76,11 +76,7 @@ impl TokenOrGroup {
     }
     fn get_value(&self, tokens: &DesignTokens, path: &[String]) -> &TokenValue {
         match self {
-            TokenOrGroup::Token {
-                value,
-                type_,
-                extensions,
-            } => {
+            TokenOrGroup::Token { value, .. } => {
                 assert_eq!(path.len(), 0);
                 value
             }
@@ -116,12 +112,6 @@ pub enum TokenValue {
     Dict(HashMap<String, Expression>),
 }
 impl TokenValue {
-    fn to_css(&self, tokens: &DesignTokens) -> String {
-        match self {
-            TokenValue::Single(value) => value.to_css(tokens),
-            TokenValue::Dict(dict) => todo!(),
-        }
-    }
     fn get_value(&self, tokens: &DesignTokens) -> Value {
         match self {
             TokenValue::Single(expr) => expr.get_value(tokens),

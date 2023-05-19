@@ -1,7 +1,7 @@
 use csscolorparser::Color;
 use serde::Deserialize;
 
-use crate::expression::{Expression, Value};
+use crate::expression::Value;
 
 #[derive(Debug, Deserialize)]
 pub enum Extensions {
