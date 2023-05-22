@@ -6,7 +6,6 @@ use extensions::Extensions;
 use indexmap::IndexMap;
 use itertools::Itertools;
 use serde::Deserialize;
-use slug::slugify;
 mod expression;
 pub mod extensions;
 
@@ -22,6 +21,9 @@ pub struct DesignTokens {
 impl DesignTokens {
     pub fn to_css(&self) -> String {
         self.global.to_css(self, "")
+    }
+    pub fn to_rust(&self) -> String {
+        self.global.to_rust(self, "")
     }
     fn get_value(&self, path: &[String]) -> &TokenValue {
         self.global.get_value(self, path)
@@ -75,7 +77,50 @@ impl TokenOrGroup {
             },
             TokenOrGroup::Group(group) => group
                 .iter()
-                .map(|(key, value)| value.to_css(tokens, &format!("{path}--{}", slugify(key))))
+                .map(|(key, value)| value.to_css(tokens, &format!("{path}--{}", slugify_css(key))))
+                .join("\n"),
+        }
+    }
+    fn to_rust(&self, tokens: &DesignTokens, path: &str) -> String {
+        match self {
+            TokenOrGroup::Token {
+                value,
+                type_,
+                extensions,
+            } => match value {
+                TokenValue::Single(value) => {
+                    let value = match extensions {
+                        Some(Extensions::StudioTokens(ext)) => {
+                            ext.to_rust(&value.get_value(tokens))
+                        }
+                        None => value.to_rust(tokens),
+                    };
+                    format!("pub const {path}: &'static str = \"{}\";", value)
+                }
+                TokenValue::Dict(dict) => {
+                    let value = dict
+                        .iter()
+                        .map(|(key, value)| format!("(\"{}\", \"{}\")", key, value.to_rust(tokens)))
+                        .join(", ");
+                    format!(
+                        "pub const {path}: &'static [(&'static str, &'static str)] = &[{}];",
+                        value
+                    )
+                }
+            },
+            TokenOrGroup::Group(group) => group
+                .iter()
+                .map(|(key, value)| {
+                    let key = slugify_rs(key).to_case(Case::UpperFlat);
+                    value.to_rust(
+                        tokens,
+                        &if path.is_empty() {
+                            key
+                        } else {
+                            format!("{path}_{}", key)
+                        },
+                    )
+                })
                 .join("\n"),
         }
     }
@@ -123,4 +168,30 @@ impl TokenValue {
             _ => panic!("Can't resolve"),
         }
     }
+}
+
+pub(crate) fn slugify(s: &str, sep: &str) -> String {
+    // let chars = s.chars().map(|c| c.is_ascii_alphanumeric()).collect::<String>();
+    deunicode::deunicode(
+        &s.replace(',', "c")
+            .replace('+', "p")
+            .replace('.', "d")
+            .replace('(', "_")
+            .replace(')', "_")
+            .replace(' ', sep)
+            .to_ascii_lowercase(),
+    )
+}
+pub(crate) fn slugify_rs(s: &str) -> String {
+    slugify(s, "_")
+}
+pub(crate) fn slugify_css(s: &str) -> String {
+    slugify(s, "-")
+}
+
+#[test]
+fn test() {
+    let tokens = get_design_tokens();
+    println!("{}", tokens.to_css());
+    println!("{}", tokens.to_rust());
 }

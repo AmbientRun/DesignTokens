@@ -1,5 +1,5 @@
 [package]
-name = "ambient_design_tokens_css"
+name = "ambient_design_tokens"
 version = "0.1.0"
 edition = "2021"
 

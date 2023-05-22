@@ -76,4 +76,38 @@ impl StudioTokensExtension {
             }
         }
     }
+    pub fn to_rust(&self, base_value: &Value) -> String {
+        match self {
+            StudioTokensExtension::Modify {
+                type_,
+                value,
+                space,
+            } => {
+                let value: f64 = value.parse().unwrap();
+                match base_value {
+                    Value::Color(color) => match space {
+                        StudioTokensSpace::Hsl => {
+                            let (h, s, l, a) = color.to_hsla();
+                            let l2 = match type_ {
+                                StudioTokensModify::Lighten => l + l * value,
+                                StudioTokensModify::Darken => l - l * value,
+                                _ => panic!("Invalid type: {:?}", type_),
+                            };
+                            Color::from_hsla(h, s, l2, a).to_hex_string()
+                        }
+                        StudioTokensSpace::Lch => {
+                            let (l, c, h, a) = color.to_lch();
+                            let a2 = match type_ {
+                                StudioTokensModify::Alpha => a + a * value,
+                                _ => panic!("Invalid type: {:?}", type_),
+                            };
+                            Color::from_lch(l, c, h, a2).to_hex_string()
+                        }
+                        StudioTokensSpace::Other => todo!(),
+                    },
+                    _ => panic!("Unexpected base value: {:?}", base_value),
+                }
+            }
+        }
+    }
 }
