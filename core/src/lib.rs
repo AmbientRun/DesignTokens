@@ -84,9 +84,7 @@ impl TokenOrGroup {
     fn to_rust(&self, tokens: &DesignTokens, path: &str) -> String {
         match self {
             TokenOrGroup::Token {
-                value,
-                type_,
-                extensions,
+                value, extensions, ..
             } => match value {
                 TokenValue::Single(value) => {
                     let value = match extensions {

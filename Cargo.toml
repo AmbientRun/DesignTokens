@@ -1,2 +1,2 @@
 [workspace]
-members = ["core", "css"]
+members = ["core", "crate"]
