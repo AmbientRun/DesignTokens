@@ -23,6 +23,18 @@ impl NumberType {
             NumberType::Percentage => format!("{}%", value),
         }
     }
+    fn to_rust(&self, value: f32) -> String {
+        let value = match self {
+            NumberType::Percentage => value * 0.01,
+            _ => value,
+        };
+        let x = format!("{}", value);
+        if x.contains(".") {
+            x
+        } else {
+            format!("{}.", x)
+        }
+    }
 }
 
 #[derive(Debug, Clone, PartialEq)]
@@ -41,9 +53,21 @@ impl Value {
     }
     pub fn to_rust(&self) -> String {
         match self {
-            Value::Color(val) => val.to_hex_string(),
-            Value::Number(val, typ) => typ.to_css(*val),
-            Value::Any(val) => val.to_string(),
+            Value::Color(val) => format!("\"{}\"", val.to_hex_string()),
+            Value::Number(val, typ) => typ.to_rust(*val),
+            Value::Any(val) => format!("\"{}\"", val.to_string()),
+        }
+    }
+    pub fn to_rust_type(&self) -> &'static str {
+        match self {
+            Value::Number(_, _) => "f32",
+            _ => "&'static str",
+        }
+    }
+    pub fn to_rust_string(&self) -> String {
+        match self {
+            Value::Number(_, _) => format!("\"{}\"", self.to_rust()),
+            _ => self.to_rust(),
         }
     }
 }
@@ -64,14 +88,6 @@ impl Expression {
             Expression::Mul(a, b) => format!("calc({} * {})", a.to_css(tokens), b.to_css(tokens)),
             Expression::Div(a, b) => format!("calc({} / {})", a.to_css(tokens), b.to_css(tokens)),
             Expression::Value(val) => val.to_css(),
-        }
-    }
-    pub fn to_rust(&self, tokens: &DesignTokens) -> String {
-        match self {
-            Expression::Ref(path) => tokens.get_value(path).get_value(tokens).to_rust(),
-            Expression::Mul(a, b) => format!("{} * {}", a.to_rust(tokens), b.to_rust(tokens)),
-            Expression::Div(a, b) => format!("{} / {}", a.to_rust(tokens), b.to_rust(tokens)),
-            Expression::Value(val) => val.to_rust(),
         }
     }
     pub fn get_value(&self, tokens: &DesignTokens) -> Value {

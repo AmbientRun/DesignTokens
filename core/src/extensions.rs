@@ -76,7 +76,7 @@ impl StudioTokensExtension {
             }
         }
     }
-    pub fn to_rust(&self, base_value: &Value) -> String {
+    pub fn to_rust(&self, base_value: &Value) -> Value {
         match self {
             StudioTokensExtension::Modify {
                 type_,
@@ -93,7 +93,7 @@ impl StudioTokensExtension {
                                 StudioTokensModify::Darken => l - l * value,
                                 _ => panic!("Invalid type: {:?}", type_),
                             };
-                            Color::from_hsla(h, s, l2, a).to_hex_string()
+                            Value::Color(Color::from_hsla(h, s, l2, a))
                         }
                         StudioTokensSpace::Lch => {
                             let (l, c, h, a) = color.to_lch();
@@ -101,7 +101,7 @@ impl StudioTokensExtension {
                                 StudioTokensModify::Alpha => a + a * value,
                                 _ => panic!("Invalid type: {:?}", type_),
                             };
-                            Color::from_lch(l, c, h, a2).to_hex_string()
+                            Value::Color(Color::from_lch(l, c, h, a2))
                         }
                         StudioTokensSpace::Other => todo!(),
                     },

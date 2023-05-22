@@ -91,14 +91,24 @@ impl TokenOrGroup {
                         Some(Extensions::StudioTokens(ext)) => {
                             ext.to_rust(&value.get_value(tokens))
                         }
-                        None => value.to_rust(tokens),
+                        None => value.get_value(tokens),
                     };
-                    format!("pub const {path}: &'static str = \"{}\";", value)
+                    format!(
+                        "pub const {path}: {} = {};",
+                        value.to_rust_type(),
+                        value.to_rust()
+                    )
                 }
                 TokenValue::Dict(dict) => {
                     let value = dict
                         .iter()
-                        .map(|(key, value)| format!("(\"{}\", \"{}\")", key, value.to_rust(tokens)))
+                        .map(|(key, value)| {
+                            format!(
+                                "(\"{}\", {})",
+                                key,
+                                value.get_value(tokens).to_rust_string()
+                            )
+                        })
                         .join(", ");
                     format!(
                         "pub const {path}: &'static [(&'static str, &'static str)] = &[{}];",
