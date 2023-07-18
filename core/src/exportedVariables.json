@@ -1,0 +1,4454 @@
+[
+  {
+    "fileName": "Ambient.light.tokens.json",
+    "body": {
+      "Border": {
+        "M": {
+          "$type": "number",
+          "$value": 4
+        },
+        "XS": {
+          "$type": "number",
+          "$value": 1
+        },
+        "S": {
+          "$type": "number",
+          "$value": 2
+        }
+      },
+      "XXXXL": {
+        "$type": "number",
+        "$value": 40
+      },
+      "XXXL": {
+        "$type": "number",
+        "$value": 32
+      },
+      "XXL": {
+        "$type": "number",
+        "$value": 24
+      },
+      "XL": {
+        "$type": "number",
+        "$value": 20
+      },
+      "L": {
+        "$type": "number",
+        "$value": 16
+      },
+      "M": {
+        "$type": "number",
+        "$value": 12
+      },
+      "S": {
+        "$type": "number",
+        "$value": 8
+      },
+      "XXS": {
+        "$type": "number",
+        "$value": 2
+      },
+      "Base": {
+        "$type": "number",
+        "$value": 4
+      },
+      "Sementic": {
+        "90-talsbarn": {
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.8}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.7}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.6}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          }
+        },
+        "Success": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.5}"
+            }
+          }
+        },
+        "Warning": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.8}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            }
+          },
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.6}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.4}"
+            }
+          }
+        },
+        "90-talsbarn-Inverted": {
+          "Elements": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.7}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.4}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.3}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.1}"
+            }
+          }
+        },
+        "Brand": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.6}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            }
+          }
+        },
+        "Main-Inverted": {
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.3}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.1}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.5}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.4}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.4}"
+            },
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.5}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          }
+        },
+        "Main": {
+          "Elements": {
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.9}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.9}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.5}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.5}"
+            }
+          }
+        },
+        "Error": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.2}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.6}"
+            }
+          }
+        },
+        "Brand-Inverted": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          }
+        }
+      },
+      "Brand": {
+        "Havremjolk": {
+          "$type": "color",
+          "$value": "#fafafa"
+        },
+        "Nastn_svart": {
+          "$type": "color",
+          "$value": "#252525"
+        },
+        "Vinter_himmel": {
+          "$type": "color",
+          "$value": "#cdcdcd"
+        },
+        "Set": {
+          "Solbranna": {
+            "1": {
+              "$type": "color",
+              "$value": "#fff2f8"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffe8f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ffdeec"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#ffcfe4"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#edc0d4"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#e0b6c9"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7a1b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#ba97a7"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad8c9b"
+            }
+          },
+          "90-talsbarn": {
+            "1": {
+              "$type": "color",
+              "$value": "#8bb2f9"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#73a2f9"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#5a91f9"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#4181f9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2871f9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#266ced"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#2466e0"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#2260d4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#205ac7"
+            }
+          },
+          "Karlek": {
+            "1": {
+              "$type": "color",
+              "$value": "#eb43b0"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#de3fa6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d13b9d"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#c43893"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b73489"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#ab3180"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#9e2d76"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#91296d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#852663"
+            }
+          },
+          "Kaffe_med_havremjolk": {
+            "1": {
+              "$type": "color",
+              "$value": "#e5cabf"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#d9bfb4"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ccb4aa"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#bfa99f"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b29d94"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#a6928a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#99877f"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#8c7c75"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#80706a"
+            }
+          },
+          "Glass": {
+            "1": {
+              "$type": "color",
+              "$value": "#ffe8ee"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffdee6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#fadae1"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#edced6"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#e0c3ca"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#d4b8bf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7adb3"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#baa2a8"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad979c"
+            }
+          },
+          "Grona_Lund": {
+            "1": {
+              "$type": "color",
+              "$value": "#168c60"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#148057"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#12734e"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#106646"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#0e583c"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#0c4d34"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#0a402b"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#083323"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#06261a"
+            }
+          },
+          "Lakrits": {
+            "1": {
+              "$type": "color",
+              "$value": "#615a50"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#544f45"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#47433b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#3b3730"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2d2a25"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#211f1b"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#141311"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#080706"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#000000"
+            }
+          },
+          "Lagom": {
+            "1": {
+              "$type": "color",
+              "$value": "#f0fdff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5fbff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e1faff"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#daf2f7"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cfe6eb"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c3d9de"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b8cdd1"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#adc0c4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a2b4b8"
+            }
+          },
+          "Nastan_svart": {
+            "1": {
+              "$type": "color",
+              "$value": "#595959"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#4d4d4d"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#404040"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#333333"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#252525"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#1a1a1a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#121212"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#0d0d0d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#090909"
+            }
+          },
+          "Godis": {
+            "1": {
+              "$type": "color",
+              "$value": "#f2ff51"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#eaf74e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#deeb4a"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d2de46"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#c5d042"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bac43e"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#aeb83a"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a2ab36"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#969e32"
+            }
+          },
+          "Sjo": {
+            "1": {
+              "$type": "color",
+              "$value": "#c9f1ff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#b1eaff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#a9def2"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#a0d2e5"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#97c7d9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#8ebbcc"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#85afbf"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#7ca4b2"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#7398a6"
+            }
+          },
+          "Orangeriet": {
+            "1": {
+              "$type": "color",
+              "$value": "#ff7d65"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#fc6b50"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#f0664c"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#e36148"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#d65b44"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c95640"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#bd503c"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#b04b38"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a34534"
+            }
+          },
+          "Vinter_himmel": {
+            "1": {
+              "$type": "color",
+              "$value": "#fafafa"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#f2f2f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e5e5e5"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d9d9d9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cdcdcd"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bfbfbf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b2b2b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a6a6a6"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#999999"
+            }
+          },
+          "Roda_Huset": {
+            "1": {
+              "$type": "color",
+              "$value": "#f22a30"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5282e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d9252b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#cc2329"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#bf2126"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#b21f24"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#a61d21"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#991a1e"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#8c181c"
+            }
+          }
+        },
+        "Glass": {
+          "$type": "color",
+          "$value": "#e0c3ca"
+        },
+        "Kaffe_med_havremjolk": {
+          "$type": "color",
+          "$value": "#b29d94"
+        },
+        "90-talsbarn": {
+          "$type": "color",
+          "$value": "#2871f9"
+        },
+        "Lakrits": {
+          "$type": "color",
+          "$value": "#2d2a25"
+        },
+        "Orangeriet": {
+          "$type": "color",
+          "$value": "#d65b44"
+        },
+        "Godis": {
+          "$type": "color",
+          "$value": "#c5d042"
+        },
+        "Solbranna": {
+          "$type": "color",
+          "$value": "#edc0d4"
+        },
+        "Grona_Lund": {
+          "$type": "color",
+          "$value": "#0e583c"
+        },
+        "Sjo": {
+          "$type": "color",
+          "$value": "#97c7d9"
+        },
+        "Karlek": {
+          "$type": "color",
+          "$value": "#b73489"
+        },
+        "Roda_Huset": {
+          "$type": "color",
+          "$value": "#bf2126"
+        },
+        "Lagom": {
+          "$type": "color",
+          "$value": "#cfe6eb"
+        }
+      },
+      "Spacing": {
+        "2": {
+          "$type": "number",
+          "$value": 8
+        },
+        "3": {
+          "$type": "number",
+          "$value": 12
+        },
+        "4": {
+          "$type": "number",
+          "$value": 16
+        },
+        "5": {
+          "$type": "number",
+          "$value": 20
+        },
+        "6": {
+          "$type": "number",
+          "$value": 24
+        },
+        "7": {
+          "$type": "number",
+          "$value": 28
+        },
+        "8": {
+          "$type": "number",
+          "$value": 32
+        },
+        "9": {
+          "$type": "number",
+          "$value": 36
+        },
+        "10": {
+          "$type": "number",
+          "$value": 40
+        },
+        "11": {
+          "$type": "number",
+          "$value": 44
+        },
+        "12": {
+          "$type": "number",
+          "$value": 48
+        },
+        "13": {
+          "$type": "number",
+          "$value": 52
+        },
+        "14": {
+          "$type": "number",
+          "$value": 56
+        },
+        "15": {
+          "$type": "number",
+          "$value": 60
+        },
+        "16": {
+          "$type": "number",
+          "$value": 64
+        },
+        "17": {
+          "$type": "number",
+          "$value": 68
+        },
+        "18": {
+          "$type": "number",
+          "$value": 72
+        },
+        "19": {
+          "$type": "number",
+          "$value": 76
+        },
+        "20": {
+          "$type": "number",
+          "$value": 80
+        },
+        "21": {
+          "$type": "number",
+          "$value": 84
+        },
+        "22": {
+          "$type": "number",
+          "$value": 88
+        },
+        "23": {
+          "$type": "number",
+          "$value": 92
+        },
+        "24": {
+          "$type": "number",
+          "$value": 96
+        },
+        "25": {
+          "$type": "number",
+          "$value": 100
+        },
+        "26": {
+          "$type": "number",
+          "$value": 104
+        },
+        "27": {
+          "$type": "number",
+          "$value": 108
+        },
+        "28": {
+          "$type": "number",
+          "$value": 112
+        },
+        "29": {
+          "$type": "number",
+          "$value": 116
+        },
+        "30": {
+          "$type": "number",
+          "$value": 120
+        },
+        "micro": {
+          "$type": "number",
+          "$value": 1
+        },
+        "2andhalf": {
+          "$type": "number",
+          "$value": 10
+        },
+        "none": {
+          "$type": "number",
+          "$value": 0
+        },
+        "half": {
+          "$type": "number",
+          "$value": 2
+        },
+        "1-base": {
+          "$type": "number",
+          "$value": 4
+        }
+      },
+      "Full": {
+        "$type": "number",
+        "$value": 10000
+      },
+      "None": {
+        "$type": "number",
+        "$value": 0
+      }
+    }
+  },
+  {
+    "fileName": "Ambient.dark.tokens.json",
+    "body": {
+      "Border": {
+        "M": {
+          "$type": "number",
+          "$value": 4
+        },
+        "XS": {
+          "$type": "number",
+          "$value": 1
+        },
+        "S": {
+          "$type": "number",
+          "$value": 2
+        }
+      },
+      "XXXXL": {
+        "$type": "number",
+        "$value": 40
+      },
+      "XXXL": {
+        "$type": "number",
+        "$value": 32
+      },
+      "XXL": {
+        "$type": "number",
+        "$value": 24
+      },
+      "XL": {
+        "$type": "number",
+        "$value": 20
+      },
+      "L": {
+        "$type": "number",
+        "$value": 16
+      },
+      "M": {
+        "$type": "number",
+        "$value": 12
+      },
+      "S": {
+        "$type": "number",
+        "$value": 8
+      },
+      "XXS": {
+        "$type": "number",
+        "$value": 2
+      },
+      "Base": {
+        "$type": "number",
+        "$value": 4
+      },
+      "Sementic": {
+        "90-talsbarn": {
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.1}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.3}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.2}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.8}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.9}"
+            }
+          }
+        },
+        "Success": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.3}"
+            }
+          }
+        },
+        "Warning": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.8}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            }
+          },
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.3}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.4}"
+            }
+          }
+        },
+        "90-talsbarn-Inverted": {
+          "Elements": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.1}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.2}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.8}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.7}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            }
+          }
+        },
+        "Brand": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.5}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.2}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          }
+        },
+        "Main-Inverted": {
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.9}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.4}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.4}"
+            },
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            }
+          }
+        },
+        "Main": {
+          "Elements": {
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.2}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.1}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.1}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.3}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.3}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            }
+          }
+        },
+        "Error": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.5}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.4}"
+            }
+          }
+        },
+        "Brand-Inverted": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.6}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            }
+          }
+        }
+      },
+      "Brand": {
+        "Havremjolk": {
+          "$type": "color",
+          "$value": "#fafafa"
+        },
+        "Nastn_svart": {
+          "$type": "color",
+          "$value": "#252525"
+        },
+        "Vinter_himmel": {
+          "$type": "color",
+          "$value": "#cdcdcd"
+        },
+        "Set": {
+          "Solbranna": {
+            "1": {
+              "$type": "color",
+              "$value": "#fff2f8"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffe8f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ffdeec"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#ffcfe4"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#edc0d4"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#e0b6c9"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7a1b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#ba97a7"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad8c9b"
+            }
+          },
+          "90-talsbarn": {
+            "1": {
+              "$type": "color",
+              "$value": "#8bb2f9"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#73a2f9"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#5a91f9"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#4181f9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2871f9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#266ced"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#2466e0"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#2260d4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#205ac7"
+            }
+          },
+          "Karlek": {
+            "1": {
+              "$type": "color",
+              "$value": "#eb43b0"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#de3fa6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d13b9d"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#c43893"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b73489"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#ab3180"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#9e2d76"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#91296d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#852663"
+            }
+          },
+          "Kaffe_med_havremjolk": {
+            "1": {
+              "$type": "color",
+              "$value": "#e5cabf"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#d9bfb4"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ccb4aa"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#bfa99f"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b29d94"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#a6928a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#99877f"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#8c7c75"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#80706a"
+            }
+          },
+          "Glass": {
+            "1": {
+              "$type": "color",
+              "$value": "#ffe8ee"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffdee6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#fadae1"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#edced6"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#e0c3ca"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#d4b8bf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7adb3"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#baa2a8"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad979c"
+            }
+          },
+          "Grona_Lund": {
+            "1": {
+              "$type": "color",
+              "$value": "#168c60"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#148057"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#12734e"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#106646"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#0e583c"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#0c4d34"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#0a402b"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#083323"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#06261a"
+            }
+          },
+          "Lakrits": {
+            "1": {
+              "$type": "color",
+              "$value": "#615a50"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#544f45"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#47433b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#3b3730"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2d2a25"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#211f1b"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#141311"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#080706"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#000000"
+            }
+          },
+          "Lagom": {
+            "1": {
+              "$type": "color",
+              "$value": "#f0fdff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5fbff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e1faff"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#daf2f7"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cfe6eb"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c3d9de"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b8cdd1"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#adc0c4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a2b4b8"
+            }
+          },
+          "Nastan_svart": {
+            "1": {
+              "$type": "color",
+              "$value": "#595959"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#4d4d4d"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#404040"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#333333"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#252525"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#1a1a1a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#121212"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#0d0d0d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#090909"
+            }
+          },
+          "Godis": {
+            "1": {
+              "$type": "color",
+              "$value": "#f2ff51"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#eaf74e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#deeb4a"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d2de46"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#c5d042"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bac43e"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#aeb83a"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a2ab36"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#969e32"
+            }
+          },
+          "Sjo": {
+            "1": {
+              "$type": "color",
+              "$value": "#c9f1ff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#b1eaff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#a9def2"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#a0d2e5"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#97c7d9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#8ebbcc"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#85afbf"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#7ca4b2"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#7398a6"
+            }
+          },
+          "Orangeriet": {
+            "1": {
+              "$type": "color",
+              "$value": "#ff7d65"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#fc6b50"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#f0664c"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#e36148"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#d65b44"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c95640"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#bd503c"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#b04b38"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a34534"
+            }
+          },
+          "Vinter_himmel": {
+            "1": {
+              "$type": "color",
+              "$value": "#fafafa"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#f2f2f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e5e5e5"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d9d9d9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cdcdcd"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bfbfbf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b2b2b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a6a6a6"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#999999"
+            }
+          },
+          "Roda_Huset": {
+            "1": {
+              "$type": "color",
+              "$value": "#f22a30"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5282e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d9252b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#cc2329"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#bf2126"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#b21f24"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#a61d21"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#991a1e"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#8c181c"
+            }
+          }
+        },
+        "Glass": {
+          "$type": "color",
+          "$value": "#e0c3ca"
+        },
+        "Kaffe_med_havremjolk": {
+          "$type": "color",
+          "$value": "#b29d94"
+        },
+        "90-talsbarn": {
+          "$type": "color",
+          "$value": "#2871f9"
+        },
+        "Lakrits": {
+          "$type": "color",
+          "$value": "#2d2a25"
+        },
+        "Orangeriet": {
+          "$type": "color",
+          "$value": "#d65b44"
+        },
+        "Godis": {
+          "$type": "color",
+          "$value": "#c5d042"
+        },
+        "Solbranna": {
+          "$type": "color",
+          "$value": "#edc0d4"
+        },
+        "Grona_Lund": {
+          "$type": "color",
+          "$value": "#0e583c"
+        },
+        "Sjo": {
+          "$type": "color",
+          "$value": "#97c7d9"
+        },
+        "Karlek": {
+          "$type": "color",
+          "$value": "#b73489"
+        },
+        "Roda_Huset": {
+          "$type": "color",
+          "$value": "#bf2126"
+        },
+        "Lagom": {
+          "$type": "color",
+          "$value": "#cfe6eb"
+        }
+      },
+      "Spacing": {
+        "2": {
+          "$type": "number",
+          "$value": 8
+        },
+        "3": {
+          "$type": "number",
+          "$value": 12
+        },
+        "4": {
+          "$type": "number",
+          "$value": 16
+        },
+        "5": {
+          "$type": "number",
+          "$value": 20
+        },
+        "6": {
+          "$type": "number",
+          "$value": 24
+        },
+        "7": {
+          "$type": "number",
+          "$value": 28
+        },
+        "8": {
+          "$type": "number",
+          "$value": 32
+        },
+        "9": {
+          "$type": "number",
+          "$value": 36
+        },
+        "10": {
+          "$type": "number",
+          "$value": 40
+        },
+        "11": {
+          "$type": "number",
+          "$value": 44
+        },
+        "12": {
+          "$type": "number",
+          "$value": 48
+        },
+        "13": {
+          "$type": "number",
+          "$value": 52
+        },
+        "14": {
+          "$type": "number",
+          "$value": 56
+        },
+        "15": {
+          "$type": "number",
+          "$value": 60
+        },
+        "16": {
+          "$type": "number",
+          "$value": 64
+        },
+        "17": {
+          "$type": "number",
+          "$value": 68
+        },
+        "18": {
+          "$type": "number",
+          "$value": 72
+        },
+        "19": {
+          "$type": "number",
+          "$value": 76
+        },
+        "20": {
+          "$type": "number",
+          "$value": 80
+        },
+        "21": {
+          "$type": "number",
+          "$value": 84
+        },
+        "22": {
+          "$type": "number",
+          "$value": 88
+        },
+        "23": {
+          "$type": "number",
+          "$value": 92
+        },
+        "24": {
+          "$type": "number",
+          "$value": 96
+        },
+        "25": {
+          "$type": "number",
+          "$value": 100
+        },
+        "26": {
+          "$type": "number",
+          "$value": 104
+        },
+        "27": {
+          "$type": "number",
+          "$value": 108
+        },
+        "28": {
+          "$type": "number",
+          "$value": 112
+        },
+        "29": {
+          "$type": "number",
+          "$value": 116
+        },
+        "30": {
+          "$type": "number",
+          "$value": 120
+        },
+        "micro": {
+          "$type": "number",
+          "$value": 1
+        },
+        "2andhalf": {
+          "$type": "number",
+          "$value": 10
+        },
+        "none": {
+          "$type": "number",
+          "$value": 0
+        },
+        "half": {
+          "$type": "number",
+          "$value": 2
+        },
+        "1-base": {
+          "$type": "number",
+          "$value": 4
+        }
+      },
+      "Full": {
+        "$type": "number",
+        "$value": 10000
+      },
+      "None": {
+        "$type": "number",
+        "$value": 0
+      }
+    }
+  },
+  {
+    "fileName": "Ambient.brand-light.tokens.json",
+    "body": {
+      "Border": {
+        "M": {
+          "$type": "number",
+          "$value": 4
+        },
+        "XS": {
+          "$type": "number",
+          "$value": 1
+        },
+        "S": {
+          "$type": "number",
+          "$value": 2
+        }
+      },
+      "XXXXL": {
+        "$type": "number",
+        "$value": 40
+      },
+      "XXXL": {
+        "$type": "number",
+        "$value": 32
+      },
+      "XXL": {
+        "$type": "number",
+        "$value": 24
+      },
+      "XL": {
+        "$type": "number",
+        "$value": 20
+      },
+      "L": {
+        "$type": "number",
+        "$value": 16
+      },
+      "M": {
+        "$type": "number",
+        "$value": 12
+      },
+      "S": {
+        "$type": "number",
+        "$value": 8
+      },
+      "XXS": {
+        "$type": "number",
+        "$value": 2
+      },
+      "Base": {
+        "$type": "number",
+        "$value": 4
+      },
+      "Sementic": {
+        "90-talsbarn": {
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.8}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.7}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.6}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          }
+        },
+        "Success": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.5}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.5}"
+            }
+          }
+        },
+        "Warning": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.8}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            }
+          },
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.6}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.4}"
+            }
+          }
+        },
+        "90-talsbarn-Inverted": {
+          "Elements": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.7}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.4}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.3}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.1}"
+            }
+          }
+        },
+        "Brand": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.6}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            }
+          }
+        },
+        "Main-Inverted": {
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.7}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.3}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.3}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.3}"
+            },
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Godis.2}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.1}"
+            }
+          }
+        },
+        "Main": {
+          "Elements": {
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.5}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.9}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.7}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.1}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.3}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            }
+          }
+        },
+        "Error": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.2}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.6}"
+            }
+          }
+        },
+        "Brand-Inverted": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          }
+        }
+      },
+      "Brand": {
+        "Havremjolk": {
+          "$type": "color",
+          "$value": "#fafafa"
+        },
+        "Nastn_svart": {
+          "$type": "color",
+          "$value": "#252525"
+        },
+        "Vinter_himmel": {
+          "$type": "color",
+          "$value": "#cdcdcd"
+        },
+        "Set": {
+          "Solbranna": {
+            "1": {
+              "$type": "color",
+              "$value": "#fff2f8"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffe8f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ffdeec"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#ffcfe4"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#edc0d4"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#e0b6c9"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7a1b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#ba97a7"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad8c9b"
+            }
+          },
+          "90-talsbarn": {
+            "1": {
+              "$type": "color",
+              "$value": "#8bb2f9"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#73a2f9"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#5a91f9"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#4181f9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2871f9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#266ced"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#2466e0"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#2260d4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#205ac7"
+            }
+          },
+          "Karlek": {
+            "1": {
+              "$type": "color",
+              "$value": "#eb43b0"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#de3fa6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d13b9d"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#c43893"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b73489"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#ab3180"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#9e2d76"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#91296d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#852663"
+            }
+          },
+          "Kaffe_med_havremjolk": {
+            "1": {
+              "$type": "color",
+              "$value": "#e5cabf"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#d9bfb4"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ccb4aa"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#bfa99f"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b29d94"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#a6928a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#99877f"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#8c7c75"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#80706a"
+            }
+          },
+          "Glass": {
+            "1": {
+              "$type": "color",
+              "$value": "#ffe8ee"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffdee6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#fadae1"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#edced6"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#e0c3ca"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#d4b8bf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7adb3"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#baa2a8"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad979c"
+            }
+          },
+          "Grona_Lund": {
+            "1": {
+              "$type": "color",
+              "$value": "#168c60"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#148057"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#12734e"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#106646"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#0e583c"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#0c4d34"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#0a402b"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#083323"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#06261a"
+            }
+          },
+          "Lakrits": {
+            "1": {
+              "$type": "color",
+              "$value": "#615a50"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#544f45"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#47433b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#3b3730"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2d2a25"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#211f1b"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#141311"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#080706"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#000000"
+            }
+          },
+          "Lagom": {
+            "1": {
+              "$type": "color",
+              "$value": "#f0fdff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5fbff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e1faff"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#daf2f7"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cfe6eb"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c3d9de"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b8cdd1"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#adc0c4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a2b4b8"
+            }
+          },
+          "Nastan_svart": {
+            "1": {
+              "$type": "color",
+              "$value": "#595959"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#4d4d4d"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#404040"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#333333"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#252525"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#1a1a1a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#121212"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#0d0d0d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#090909"
+            }
+          },
+          "Godis": {
+            "1": {
+              "$type": "color",
+              "$value": "#f2ff51"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#eaf74e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#deeb4a"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d2de46"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#c5d042"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bac43e"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#aeb83a"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a2ab36"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#969e32"
+            }
+          },
+          "Sjo": {
+            "1": {
+              "$type": "color",
+              "$value": "#c9f1ff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#b1eaff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#a9def2"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#a0d2e5"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#97c7d9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#8ebbcc"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#85afbf"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#7ca4b2"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#7398a6"
+            }
+          },
+          "Orangeriet": {
+            "1": {
+              "$type": "color",
+              "$value": "#ff7d65"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#fc6b50"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#f0664c"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#e36148"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#d65b44"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c95640"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#bd503c"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#b04b38"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a34534"
+            }
+          },
+          "Vinter_himmel": {
+            "1": {
+              "$type": "color",
+              "$value": "#fafafa"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#f2f2f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e5e5e5"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d9d9d9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cdcdcd"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bfbfbf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b2b2b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a6a6a6"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#999999"
+            }
+          },
+          "Roda_Huset": {
+            "1": {
+              "$type": "color",
+              "$value": "#f22a30"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5282e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d9252b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#cc2329"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#bf2126"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#b21f24"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#a61d21"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#991a1e"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#8c181c"
+            }
+          }
+        },
+        "Glass": {
+          "$type": "color",
+          "$value": "#e0c3ca"
+        },
+        "Kaffe_med_havremjolk": {
+          "$type": "color",
+          "$value": "#b29d94"
+        },
+        "90-talsbarn": {
+          "$type": "color",
+          "$value": "#2871f9"
+        },
+        "Lakrits": {
+          "$type": "color",
+          "$value": "#2d2a25"
+        },
+        "Orangeriet": {
+          "$type": "color",
+          "$value": "#d65b44"
+        },
+        "Godis": {
+          "$type": "color",
+          "$value": "#c5d042"
+        },
+        "Solbranna": {
+          "$type": "color",
+          "$value": "#edc0d4"
+        },
+        "Grona_Lund": {
+          "$type": "color",
+          "$value": "#0e583c"
+        },
+        "Sjo": {
+          "$type": "color",
+          "$value": "#97c7d9"
+        },
+        "Karlek": {
+          "$type": "color",
+          "$value": "#b73489"
+        },
+        "Roda_Huset": {
+          "$type": "color",
+          "$value": "#bf2126"
+        },
+        "Lagom": {
+          "$type": "color",
+          "$value": "#cfe6eb"
+        }
+      },
+      "Spacing": {
+        "2": {
+          "$type": "number",
+          "$value": 8
+        },
+        "3": {
+          "$type": "number",
+          "$value": 12
+        },
+        "4": {
+          "$type": "number",
+          "$value": 16
+        },
+        "5": {
+          "$type": "number",
+          "$value": 20
+        },
+        "6": {
+          "$type": "number",
+          "$value": 24
+        },
+        "7": {
+          "$type": "number",
+          "$value": 28
+        },
+        "8": {
+          "$type": "number",
+          "$value": 32
+        },
+        "9": {
+          "$type": "number",
+          "$value": 36
+        },
+        "10": {
+          "$type": "number",
+          "$value": 40
+        },
+        "11": {
+          "$type": "number",
+          "$value": 44
+        },
+        "12": {
+          "$type": "number",
+          "$value": 48
+        },
+        "13": {
+          "$type": "number",
+          "$value": 52
+        },
+        "14": {
+          "$type": "number",
+          "$value": 56
+        },
+        "15": {
+          "$type": "number",
+          "$value": 60
+        },
+        "16": {
+          "$type": "number",
+          "$value": 64
+        },
+        "17": {
+          "$type": "number",
+          "$value": 68
+        },
+        "18": {
+          "$type": "number",
+          "$value": 72
+        },
+        "19": {
+          "$type": "number",
+          "$value": 76
+        },
+        "20": {
+          "$type": "number",
+          "$value": 80
+        },
+        "21": {
+          "$type": "number",
+          "$value": 84
+        },
+        "22": {
+          "$type": "number",
+          "$value": 88
+        },
+        "23": {
+          "$type": "number",
+          "$value": 92
+        },
+        "24": {
+          "$type": "number",
+          "$value": 96
+        },
+        "25": {
+          "$type": "number",
+          "$value": 100
+        },
+        "26": {
+          "$type": "number",
+          "$value": 104
+        },
+        "27": {
+          "$type": "number",
+          "$value": 108
+        },
+        "28": {
+          "$type": "number",
+          "$value": 112
+        },
+        "29": {
+          "$type": "number",
+          "$value": 116
+        },
+        "30": {
+          "$type": "number",
+          "$value": 120
+        },
+        "micro": {
+          "$type": "number",
+          "$value": 1
+        },
+        "2andhalf": {
+          "$type": "number",
+          "$value": 10
+        },
+        "none": {
+          "$type": "number",
+          "$value": 0
+        },
+        "half": {
+          "$type": "number",
+          "$value": 2
+        },
+        "1-base": {
+          "$type": "number",
+          "$value": 4
+        }
+      },
+      "Full": {
+        "$type": "number",
+        "$value": 10000
+      },
+      "None": {
+        "$type": "number",
+        "$value": 0
+      }
+    }
+  },
+  {
+    "fileName": "Ambient.roda_huset.tokens.json",
+    "body": {
+      "Border": {
+        "M": {
+          "$type": "number",
+          "$value": 4
+        },
+        "XS": {
+          "$type": "number",
+          "$value": 1
+        },
+        "S": {
+          "$type": "number",
+          "$value": 2
+        }
+      },
+      "XXXXL": {
+        "$type": "number",
+        "$value": 40
+      },
+      "XXXL": {
+        "$type": "number",
+        "$value": 32
+      },
+      "XXL": {
+        "$type": "number",
+        "$value": 24
+      },
+      "XL": {
+        "$type": "number",
+        "$value": 20
+      },
+      "L": {
+        "$type": "number",
+        "$value": 16
+      },
+      "M": {
+        "$type": "number",
+        "$value": 12
+      },
+      "S": {
+        "$type": "number",
+        "$value": 8
+      },
+      "XXS": {
+        "$type": "number",
+        "$value": 2
+      },
+      "Base": {
+        "$type": "number",
+        "$value": 4
+      },
+      "Sementic": {
+        "90-talsbarn": {
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.8}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.7}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.6}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          }
+        },
+        "Success": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.2}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.1}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          }
+        },
+        "Warning": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.8}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            }
+          },
+          "Surface": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.5}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Orangeriet.4}"
+            }
+          }
+        },
+        "90-talsbarn-Inverted": {
+          "Elements": {
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.5}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.7}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.90-talsbarn.4}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.3}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.1}"
+            }
+          }
+        },
+        "Brand": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.1}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.6}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            }
+          }
+        },
+        "Main-Inverted": {
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.9}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.8}"
+            },
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.6}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.9}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.2}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.1}"
+            }
+          }
+        },
+        "Main": {
+          "Elements": {
+            "Success": {
+              "$type": "color",
+              "$value": "{Brand.Set.Lakrits.9}"
+            },
+            "Accent": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.5}"
+            },
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.9}"
+            },
+            "Warning": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            },
+            "Error": {
+              "$type": "color",
+              "$value": "{Brand.Set.Nastan_svart.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.5}"
+            }
+          },
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.2}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Glass.5}"
+            }
+          }
+        },
+        "Error": {
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.2}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Vinter_himmel.1}"
+            }
+          },
+          "Surface": {
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.7}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Roda_Huset.6}"
+            }
+          }
+        },
+        "Brand-Inverted": {
+          "Surface": {
+            "SecondaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.4}"
+            },
+            "PrimaryHover": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.3}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.5}"
+            }
+          },
+          "Elements": {
+            "Inactive": {
+              "$type": "color",
+              "$value": "{Brand.Set.Solbranna.9}"
+            },
+            "Secondary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.4}"
+            },
+            "Primary": {
+              "$type": "color",
+              "$value": "{Brand.Set.Grona_Lund.5}"
+            }
+          }
+        }
+      },
+      "Brand": {
+        "Havremjolk": {
+          "$type": "color",
+          "$value": "#fafafa"
+        },
+        "Nastn_svart": {
+          "$type": "color",
+          "$value": "#252525"
+        },
+        "Vinter_himmel": {
+          "$type": "color",
+          "$value": "#cdcdcd"
+        },
+        "Set": {
+          "Solbranna": {
+            "1": {
+              "$type": "color",
+              "$value": "#fff2f8"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffe8f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ffdeec"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#ffcfe4"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#edc0d4"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#e0b6c9"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7a1b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#ba97a7"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad8c9b"
+            }
+          },
+          "90-talsbarn": {
+            "1": {
+              "$type": "color",
+              "$value": "#8bb2f9"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#73a2f9"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#5a91f9"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#4181f9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2871f9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#266ced"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#2466e0"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#2260d4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#205ac7"
+            }
+          },
+          "Karlek": {
+            "1": {
+              "$type": "color",
+              "$value": "#eb43b0"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#de3fa6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d13b9d"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#c43893"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b73489"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#ab3180"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#9e2d76"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#91296d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#852663"
+            }
+          },
+          "Kaffe_med_havremjolk": {
+            "1": {
+              "$type": "color",
+              "$value": "#e5cabf"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#d9bfb4"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#ccb4aa"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#bfa99f"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#b29d94"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#a6928a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#99877f"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#8c7c75"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#80706a"
+            }
+          },
+          "Glass": {
+            "1": {
+              "$type": "color",
+              "$value": "#ffe8ee"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#ffdee6"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#fadae1"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#edced6"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#e0c3ca"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#d4b8bf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#c7adb3"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#baa2a8"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#ad979c"
+            }
+          },
+          "Grona_Lund": {
+            "1": {
+              "$type": "color",
+              "$value": "#168c60"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#148057"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#12734e"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#106646"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#0e583c"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#0c4d34"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#0a402b"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#083323"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#06261a"
+            }
+          },
+          "Lakrits": {
+            "1": {
+              "$type": "color",
+              "$value": "#615a50"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#544f45"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#47433b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#3b3730"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#2d2a25"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#211f1b"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#141311"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#080706"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#000000"
+            }
+          },
+          "Lagom": {
+            "1": {
+              "$type": "color",
+              "$value": "#f0fdff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5fbff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e1faff"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#daf2f7"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cfe6eb"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c3d9de"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b8cdd1"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#adc0c4"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a2b4b8"
+            }
+          },
+          "Nastan_svart": {
+            "1": {
+              "$type": "color",
+              "$value": "#595959"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#4d4d4d"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#404040"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#333333"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#252525"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#1a1a1a"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#121212"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#0d0d0d"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#090909"
+            }
+          },
+          "Godis": {
+            "1": {
+              "$type": "color",
+              "$value": "#f2ff51"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#eaf74e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#deeb4a"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d2de46"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#c5d042"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bac43e"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#aeb83a"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a2ab36"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#969e32"
+            }
+          },
+          "Sjo": {
+            "1": {
+              "$type": "color",
+              "$value": "#c9f1ff"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#b1eaff"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#a9def2"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#a0d2e5"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#97c7d9"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#8ebbcc"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#85afbf"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#7ca4b2"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#7398a6"
+            }
+          },
+          "Orangeriet": {
+            "1": {
+              "$type": "color",
+              "$value": "#ff7d65"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#fc6b50"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#f0664c"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#e36148"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#d65b44"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#c95640"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#bd503c"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#b04b38"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#a34534"
+            }
+          },
+          "Vinter_himmel": {
+            "1": {
+              "$type": "color",
+              "$value": "#fafafa"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#f2f2f2"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#e5e5e5"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#d9d9d9"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#cdcdcd"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#bfbfbf"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#b2b2b2"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#a6a6a6"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#999999"
+            }
+          },
+          "Roda_Huset": {
+            "1": {
+              "$type": "color",
+              "$value": "#f22a30"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "#e5282e"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "#d9252b"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "#cc2329"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "#bf2126"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "#b21f24"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "#a61d21"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "#991a1e"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "#8c181c"
+            }
+          }
+        },
+        "Glass": {
+          "$type": "color",
+          "$value": "#e0c3ca"
+        },
+        "Kaffe_med_havremjolk": {
+          "$type": "color",
+          "$value": "#b29d94"
+        },
+        "90-talsbarn": {
+          "$type": "color",
+          "$value": "#2871f9"
+        },
+        "Lakrits": {
+          "$type": "color",
+          "$value": "#2d2a25"
+        },
+        "Orangeriet": {
+          "$type": "color",
+          "$value": "#d65b44"
+        },
+        "Godis": {
+          "$type": "color",
+          "$value": "#c5d042"
+        },
+        "Solbranna": {
+          "$type": "color",
+          "$value": "#edc0d4"
+        },
+        "Grona_Lund": {
+          "$type": "color",
+          "$value": "#0e583c"
+        },
+        "Sjo": {
+          "$type": "color",
+          "$value": "#97c7d9"
+        },
+        "Karlek": {
+          "$type": "color",
+          "$value": "#b73489"
+        },
+        "Roda_Huset": {
+          "$type": "color",
+          "$value": "#bf2126"
+        },
+        "Lagom": {
+          "$type": "color",
+          "$value": "#cfe6eb"
+        }
+      },
+      "Spacing": {
+        "2": {
+          "$type": "number",
+          "$value": 8
+        },
+        "3": {
+          "$type": "number",
+          "$value": 12
+        },
+        "4": {
+          "$type": "number",
+          "$value": 16
+        },
+        "5": {
+          "$type": "number",
+          "$value": 20
+        },
+        "6": {
+          "$type": "number",
+          "$value": 24
+        },
+        "7": {
+          "$type": "number",
+          "$value": 28
+        },
+        "8": {
+          "$type": "number",
+          "$value": 32
+        },
+        "9": {
+          "$type": "number",
+          "$value": 36
+        },
+        "10": {
+          "$type": "number",
+          "$value": 40
+        },
+        "11": {
+          "$type": "number",
+          "$value": 44
+        },
+        "12": {
+          "$type": "number",
+          "$value": 48
+        },
+        "13": {
+          "$type": "number",
+          "$value": 52
+        },
+        "14": {
+          "$type": "number",
+          "$value": 56
+        },
+        "15": {
+          "$type": "number",
+          "$value": 60
+        },
+        "16": {
+          "$type": "number",
+          "$value": 64
+        },
+        "17": {
+          "$type": "number",
+          "$value": 68
+        },
+        "18": {
+          "$type": "number",
+          "$value": 72
+        },
+        "19": {
+          "$type": "number",
+          "$value": 76
+        },
+        "20": {
+          "$type": "number",
+          "$value": 80
+        },
+        "21": {
+          "$type": "number",
+          "$value": 84
+        },
+        "22": {
+          "$type": "number",
+          "$value": 88
+        },
+        "23": {
+          "$type": "number",
+          "$value": 92
+        },
+        "24": {
+          "$type": "number",
+          "$value": 96
+        },
+        "25": {
+          "$type": "number",
+          "$value": 100
+        },
+        "26": {
+          "$type": "number",
+          "$value": 104
+        },
+        "27": {
+          "$type": "number",
+          "$value": 108
+        },
+        "28": {
+          "$type": "number",
+          "$value": 112
+        },
+        "29": {
+          "$type": "number",
+          "$value": 116
+        },
+        "30": {
+          "$type": "number",
+          "$value": 120
+        },
+        "micro": {
+          "$type": "number",
+          "$value": 1
+        },
+        "2andhalf": {
+          "$type": "number",
+          "$value": 10
+        },
+        "none": {
+          "$type": "number",
+          "$value": 0
+        },
+        "half": {
+          "$type": "number",
+          "$value": 2
+        },
+        "1-base": {
+          "$type": "number",
+          "$value": 4
+        }
+      },
+      "Full": {
+        "$type": "number",
+        "$value": 10000
+      },
+      "None": {
+        "$type": "number",
+        "$value": 0
+      }
+    }
+  }
+]

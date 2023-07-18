@@ -92,7 +92,13 @@ impl Expression {
     }
     pub fn get_value(&self, tokens: &DesignTokens) -> Value {
         match self {
-            Expression::Ref(path) => tokens.get_value(path).get_value(tokens),
+            Expression::Ref(path) => {
+                // let path = path.iter().map(|s| slugify_css(s)).collect_vec();
+                tokens
+                    .get_value(&path)
+                    .expect(&format!("No such path: {:?}", path))
+                    .get_value(tokens)
+            }
             Expression::Mul(a, b) => match (a.get_value(tokens), b.get_value(tokens)) {
                 (Value::Color(a), Value::Color(b)) => Value::Color(Color {
                     r: a.r * b.r,
@@ -129,7 +135,7 @@ peg::parser! {
         x:(@) _ "*" _ y:@ { Expression::Mul(Box::new(x), Box::new(y)) }
         x:(@) _ "/" _ y:@ { Expression::Div(Box::new(x), Box::new(y)) }
         --
-        "{" v:($((!"}" !"." [_])*) ** ".") "}" { Expression::Ref(v.iter().map(|x| x.to_string()).collect()) }
+        "{" v:($((!"}" !"." [_])*) ** ".") "}" { Expression::Ref(v.iter().flat_map(|x| x.to_string().split("/").map(|x| x.to_string()).collect_vec()).collect()) }
         "#" v:$(['a'..='z' | 'A'..='Z' | '0'..='9']*) { Expression::Value(Value::Color(csscolorparser::parse(v).unwrap())) }
         v:number() "%" { Expression::Value(Value::Number(v, NumberType::Percentage)) }
         v:number() "px" { Expression::Value(Value::Number(v, NumberType::Pixels)) }
@@ -204,6 +210,39 @@ impl<'de> Visitor<'de> for ExpressionVisitor {
             Err(err) => Err(E::custom(format!("Invalid expression: {}", err))),
         }
     }
+
+    fn visit_f32<E>(self, v: f32) -> Result<Self::Value, E>
+    where
+        E: de::Error,
+    {
+        Ok(Expression::Value(Value::Number(v as f32, NumberType::None)))
+    }
+
+    fn visit_f64<E>(self, v: f64) -> Result<Self::Value, E>
+    where
+        E: de::Error,
+    {
+        Ok(Expression::Value(Value::Number(v as f32, NumberType::None)))
+    }
+
+    fn visit_i32<E>(self, v: i32) -> Result<Self::Value, E>
+    where
+        E: de::Error,
+    {
+        Ok(Expression::Value(Value::Number(v as f32, NumberType::None)))
+    }
+    fn visit_i64<E>(self, v: i64) -> Result<Self::Value, E>
+    where
+        E: de::Error,
+    {
+        Ok(Expression::Value(Value::Number(v as f32, NumberType::None)))
+    }
+    fn visit_u64<E>(self, v: u64) -> Result<Self::Value, E>
+    where
+        E: de::Error,
+    {
+        Ok(Expression::Value(Value::Number(v as f32, NumberType::None)))
+    }
 }
 
 impl<'de> Deserialize<'de> for Expression {
@@ -211,6 +250,13 @@ impl<'de> Deserialize<'de> for Expression {
     where
         D: Deserializer<'de>,
     {
-        deserializer.deserialize_str(ExpressionVisitor)
+        deserializer.deserialize_any(ExpressionVisitor)
     }
+}
+
+#[test]
+fn test_expr() {
+    let _expr: Expression = serde_json::from_str("5.5").unwrap();
+    let _expr: Expression = serde_json::from_str("55").unwrap();
+    let _expr: Expression = serde_json::from_str("\"55\"").unwrap();
 }

@@ -9,29 +9,38 @@ use serde::Deserialize;
 mod expression;
 pub mod extensions;
 
-pub fn get_design_tokens() -> DesignTokens {
-    let data = include_str!("../../ambient-design/tokens.json");
+pub fn get_design_tokens() -> Vec<DesignTokens> {
+    let data = include_str!("./exportedVariables.json");
     serde_json::from_str(data).unwrap()
 }
 
 #[derive(Debug, Deserialize)]
 pub struct DesignTokens {
-    pub global: TokenOrGroup,
+    #[serde(rename = "fileName")]
+    pub file_name: String,
+    pub body: TokenOrGroup,
 }
 impl DesignTokens {
+    fn get_name(&self) -> &str {
+        self.file_name.split(".").nth(1).unwrap()
+    }
     pub fn to_css(&self) -> String {
-        self.global.to_css(self, "")
+        self.body
+            .to_css(self, &format!("--{}", slugify_css(self.get_name())))
     }
     pub fn to_rust(&self) -> String {
-        self.global.to_rust(self, "")
+        self.body
+            .to_rust(self, &slugify_rs(self.get_name()).to_case(Case::UpperFlat))
     }
-    fn get_value(&self, path: &[String]) -> &TokenValue {
-        self.global.get_value(self, path)
+    fn get_value(&self, path: &[String]) -> Option<&TokenValue> {
+        self.body.get_value(self, path)
     }
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Default)]
 pub enum TokenType {
+    #[default]
+    None,
     #[serde(rename = "border")]
     Border,
     #[serde(rename = "typography")]
@@ -44,8 +53,9 @@ pub enum TokenType {
 #[serde(untagged)]
 pub enum TokenOrGroup {
     Token {
+        #[serde(alias = "$value")]
         value: TokenValue,
-        #[serde(rename = "type")]
+        #[serde(rename = "type", alias = "$type")]
         type_: TokenType,
         #[serde(rename = "$extensions")]
         extensions: Option<Extensions>,
@@ -63,7 +73,7 @@ impl TokenOrGroup {
                 TokenValue::Single(value) => {
                     let value = match extensions {
                         Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
-                        None => value.to_css(tokens),
+                        _ => value.to_css(tokens),
                     };
                     format!(":root {{ {path}: {}; }}", value)
                 }
@@ -91,7 +101,7 @@ impl TokenOrGroup {
                         Some(Extensions::StudioTokens(ext)) => {
                             ext.to_rust(&value.get_value(tokens))
                         }
-                        None => value.get_value(tokens),
+                        _ => value.get_value(tokens),
                     };
                     format!(
                         "pub const {path}: {} = {};",
@@ -132,15 +142,13 @@ impl TokenOrGroup {
                 .join("\n"),
         }
     }
-    fn get_value(&self, tokens: &DesignTokens, path: &[String]) -> &TokenValue {
+    fn get_value(&self, tokens: &DesignTokens, path: &[String]) -> Option<&TokenValue> {
         match self {
             TokenOrGroup::Token { value, .. } => {
                 assert_eq!(path.len(), 0);
-                value
+                Some(value)
             }
-            TokenOrGroup::Group(group) => {
-                group.get(&path[0]).unwrap().get_value(tokens, &path[1..])
-            }
+            TokenOrGroup::Group(group) => group.get(&path[0])?.get_value(tokens, &path[1..]),
         }
     }
 }
@@ -177,6 +185,11 @@ impl TokenValue {
         }
     }
 }
+impl Default for TokenValue {
+    fn default() -> Self {
+        Self::Dict(Default::default())
+    }
+}
 
 pub(crate) fn slugify(s: &str, sep: &str) -> String {
     // let chars = s.chars().map(|c| c.is_ascii_alphanumeric()).collect::<String>();
@@ -200,6 +213,8 @@ pub(crate) fn slugify_css(s: &str) -> String {
 #[test]
 fn test() {
     let tokens = get_design_tokens();
-    println!("{}", tokens.to_css());
-    println!("{}", tokens.to_rust());
+    for tokens in tokens {
+        println!("{}", tokens.to_css());
+        println!("{}", tokens.to_rust());
+    }
 }

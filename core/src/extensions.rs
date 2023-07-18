@@ -7,6 +7,8 @@ use crate::expression::Value;
 pub enum Extensions {
     #[serde(rename = "studio.tokens")]
     StudioTokens(StudioTokensExtension),
+    #[serde(other)]
+    Other,
 }
 
 #[derive(Debug, Deserialize)]

@@ -8,11 +8,25 @@ fn main() {
     let out_dir = env::var_os("OUT_DIR").unwrap();
     {
         let dest_path = Path::new(&out_dir).join("ambient.css");
-        fs::write(&dest_path, data.to_css()).unwrap();
+        fs::write(
+            &dest_path,
+            data.iter()
+                .map(|x| x.to_css())
+                .collect::<Vec<_>>()
+                .join("\n"),
+        )
+        .unwrap();
     }
     {
         let dest_path = Path::new(&out_dir).join("ambient.rs");
-        fs::write(&dest_path, data.to_rust()).unwrap();
+        fs::write(
+            &dest_path,
+            data.iter()
+                .map(|x| x.to_rust())
+                .collect::<Vec<_>>()
+                .join("\n"),
+        )
+        .unwrap();
     }
     println!("cargo:rerun-if-changed=build.rs");
 }
