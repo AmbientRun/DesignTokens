@@ -21,16 +21,17 @@ pub struct DesignTokens {
     pub body: TokenOrGroup,
 }
 impl DesignTokens {
-    fn get_name(&self) -> &str {
+    pub fn get_name(&self) -> &str {
         self.file_name.split(".").nth(1).unwrap()
     }
+    pub fn get_name_rust(&self) -> String {
+        slugify_rs(self.get_name()).to_case(Case::UpperFlat)
+    }
     pub fn to_css(&self) -> String {
-        self.body
-            .to_css(self, &format!("--{}", slugify_css(self.get_name())))
+        self.body.to_css(self, &slugify_css(self.get_name()), "")
     }
     pub fn to_rust(&self) -> String {
-        self.body
-            .to_rust(self, &slugify_rs(self.get_name()).to_case(Case::UpperFlat))
+        self.body.to_rust(self, "")
     }
     fn get_value(&self, path: &[String]) -> Option<&TokenValue> {
         self.body.get_value(self, path)
@@ -63,7 +64,7 @@ pub enum TokenOrGroup {
     Group(IndexMap<String, TokenOrGroup>),
 }
 impl TokenOrGroup {
-    fn to_css(&self, tokens: &DesignTokens, path: &str) -> String {
+    fn to_css(&self, tokens: &DesignTokens, root_class: &str, path: &str) -> String {
         match self {
             TokenOrGroup::Token {
                 value,
@@ -75,19 +76,21 @@ impl TokenOrGroup {
                         Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
                         _ => value.to_css(tokens),
                     };
-                    format!(":root {{ {path}: {}; }}", value)
+                    format!(".{root_class} {{ {path}: {}; }}", value)
                 }
                 TokenValue::Dict(dict) => {
                     let value = dict
                         .iter()
                         .map(|(key, value)| css_entry(tokens, type_, key, value))
                         .join("\n");
-                    format!(".{path} {{\n{}\n}}", value)
+                    format!(".{root_class} .{path} {{\n{}\n}}", value)
                 }
             },
             TokenOrGroup::Group(group) => group
                 .iter()
-                .map(|(key, value)| value.to_css(tokens, &format!("{path}--{}", slugify_css(key))))
+                .map(|(key, value)| {
+                    value.to_css(tokens, root_class, &format!("{path}--{}", slugify_css(key)))
+                })
                 .join("\n"),
         }
     }

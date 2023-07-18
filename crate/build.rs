@@ -22,7 +22,7 @@ fn main() {
         fs::write(
             &dest_path,
             data.iter()
-                .map(|x| x.to_rust())
+                .map(|x| format!("mod {} {{ {} }}", x.get_name_rust(), x.to_rust()))
                 .collect::<Vec<_>>()
                 .join("\n"),
         )
