@@ -10,19 +10,31 @@ mod expression;
 pub mod extensions;
 
 pub fn get_design_tokens() -> Vec<DesignTokens> {
-    let data = include_str!("./exportedVariables.json");
-    serde_json::from_str(data).unwrap()
+    // I couldn't get one exporter to give me good, well-formatted data, so I had to use two.
+    let mut data: Vec<DesignTokens> =
+        serde_json::from_str(include_str!("./exportedVariables.json")).unwrap();
+    let data2: IndexMap<String, TokenOrGroup> =
+        serde_json::from_str(include_str!("./design-tokens.tokens.json")).unwrap();
+    data.push(DesignTokens {
+        file_name: None,
+        body: TokenOrGroup::Group(data2),
+    });
+    data
 }
 
 #[derive(Debug, Deserialize)]
 pub struct DesignTokens {
     #[serde(rename = "fileName")]
-    pub file_name: String,
+    pub file_name: Option<String>,
     pub body: TokenOrGroup,
 }
 impl DesignTokens {
     pub fn get_name(&self) -> &str {
-        self.file_name.split(".").nth(1).unwrap()
+        if let Some(name) = &self.file_name {
+            name.split(".").nth(1).unwrap()
+        } else {
+            "ambient"
+        }
     }
     pub fn get_name_rust(&self) -> String {
         slugify_rs(self.get_name()).to_case(Case::UpperFlat)
