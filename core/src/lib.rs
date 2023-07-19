@@ -56,7 +56,7 @@ pub enum TokenType {
     None,
     #[serde(rename = "border")]
     Border,
-    #[serde(rename = "typography")]
+    #[serde(rename = "typography", alias = "custom-fontStyle")]
     Typography,
     #[serde(other)]
     Other,
