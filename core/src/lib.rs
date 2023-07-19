@@ -86,7 +86,7 @@ impl TokenOrGroup {
                 TokenValue::Single(value) => {
                     let value = match extensions {
                         Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
-                        _ => value.to_css(tokens),
+                        _ => css_value(tokens, value),
                     };
                     format!(".{root_class} {{ -{path}: {}; }}", value)
                 }
@@ -169,7 +169,7 @@ impl TokenOrGroup {
 }
 fn css_entry(tokens: &DesignTokens, type_: &TokenType, key: &str, value: &Expression) -> String {
     let prop = css_property(type_, key);
-    format!("{}: {};", prop, css_value(tokens, type_, &prop, value))
+    format!("{}: {};", prop, css_value(tokens, value))
 }
 fn css_property(type_: &TokenType, key: &str) -> String {
     match type_ {
@@ -187,17 +187,11 @@ fn css_property(type_: &TokenType, key: &str) -> String {
         _ => key.to_case(Case::Kebab),
     }
 }
-fn css_value(tokens: &DesignTokens, type_: &TokenType, prop: &str, value: &Expression) -> String {
-    match type_ {
-        TokenType::Typography => match prop {
-            "text-transform" | "line-height" | "font-size" => match value {
-                Expression::Value(Value::Number(v, NumberType::None)) => {
-                    Expression::Value(Value::Number(*v, NumberType::Pixels)).to_css(tokens)
-                }
-                _ => value.to_css(tokens),
-            },
-            _ => value.to_css(tokens),
-        },
+fn css_value(tokens: &DesignTokens, value: &Expression) -> String {
+    match value {
+        Expression::Value(Value::Number(v, NumberType::None)) => {
+            Expression::Value(Value::Number(*v, NumberType::Pixels)).to_css(tokens)
+        }
         _ => value.to_css(tokens),
     }
 }
