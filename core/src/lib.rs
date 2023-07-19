@@ -88,20 +88,20 @@ impl TokenOrGroup {
                         Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
                         _ => value.to_css(tokens),
                     };
-                    format!(".{root_class} {{ {path}: {}; }}", value)
+                    format!(".{root_class} {{ -{path}: {}; }}", value)
                 }
                 TokenValue::Dict(dict) => {
                     let value = dict
                         .iter()
                         .map(|(key, value)| css_entry(tokens, type_, key, value))
                         .join("\n");
-                    format!(".{root_class} .{path} {{\n{}\n}}", value)
+                    format!(".{root_class} .{} {{\n{}\n}}", &path[1..], value)
                 }
             },
             TokenOrGroup::Group(group) => group
                 .iter()
                 .map(|(key, value)| {
-                    value.to_css(tokens, root_class, &format!("{path}--{}", slugify_css(key)))
+                    value.to_css(tokens, root_class, &format!("{path}-{}", slugify_css(key)))
                 })
                 .join("\n"),
         }
