@@ -179,7 +179,7 @@ fn css_property(type_: &TokenType, key: &str) -> String {
             _ => key.to_case(Case::Kebab),
         },
         TokenType::Typography => match key {
-            "textCase" => "text-transform".to_string(),
+            "textCase" | "text-case" => "text-transform".to_string(),
             _ => key.to_case(Case::Kebab),
         },
         _ => key.to_case(Case::Kebab),
