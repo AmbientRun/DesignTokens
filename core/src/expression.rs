@@ -83,7 +83,7 @@ impl Expression {
     pub fn to_css(&self, tokens: &DesignTokens) -> String {
         match self {
             Expression::Ref(path) => {
-                format!("var(--{})", path.iter().map(|x| slugify_css(x)).join("--"))
+                format!("var(--{})", path.iter().map(|x| slugify_css(x)).join("-"))
             }
             Expression::Mul(a, b) => format!("calc({} * {})", a.to_css(tokens), b.to_css(tokens)),
             Expression::Div(a, b) => format!("calc({} / {})", a.to_css(tokens), b.to_css(tokens)),
