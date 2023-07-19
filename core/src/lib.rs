@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 use convert_case::{Case, Casing};
-use expression::{Expression, Value};
+use expression::{Expression, NumberType, Value};
 use extensions::Extensions;
 use indexmap::IndexMap;
 use itertools::Itertools;
@@ -168,7 +168,8 @@ impl TokenOrGroup {
     }
 }
 fn css_entry(tokens: &DesignTokens, type_: &TokenType, key: &str, value: &Expression) -> String {
-    format!("{}: {};", css_property(type_, key), value.to_css(tokens))
+    let prop = css_property(type_, key);
+    format!("{}: {};", prop, css_value(tokens, type_, &prop, value))
 }
 fn css_property(type_: &TokenType, key: &str) -> String {
     match type_ {
@@ -180,9 +181,24 @@ fn css_property(type_: &TokenType, key: &str) -> String {
         },
         TokenType::Typography => match key {
             "textCase" | "text-case" => "text-transform".to_string(),
+            "lineHeight" => "line-height".to_string(),
             _ => key.to_case(Case::Kebab),
         },
         _ => key.to_case(Case::Kebab),
+    }
+}
+fn css_value(tokens: &DesignTokens, type_: &TokenType, prop: &str, value: &Expression) -> String {
+    match type_ {
+        TokenType::Typography => match prop {
+            "text-transform" | "line-height" | "font-size" => match value {
+                Expression::Value(Value::Number(v, NumberType::None)) => {
+                    Expression::Value(Value::Number(*v, NumberType::Pixels)).to_css(tokens)
+                }
+                _ => value.to_css(tokens),
+            },
+            _ => value.to_css(tokens),
+        },
+        _ => value.to_css(tokens),
     }
 }
 
