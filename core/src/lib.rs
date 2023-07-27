@@ -86,7 +86,7 @@ impl TokenOrGroup {
                 TokenValue::Single(value) => {
                     let value = match extensions {
                         Some(Extensions::StudioTokens(ext)) => ext.to_css(&value.get_value(tokens)),
-                        _ => css_value(tokens, "", value),
+                        _ => value.to_css(tokens),
                     };
                     format!(".{root_class} {{ -{path}: {}; }}", value)
                 }
